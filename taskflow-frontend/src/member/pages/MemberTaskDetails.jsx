@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import axios from "axios";
 
-import "../styles/MemberTaskDetails.css";
+import "../styles/memberTaskDetails.css";
 
 
 
