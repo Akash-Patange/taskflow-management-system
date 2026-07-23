@@ -151,9 +151,4 @@ TaskFlow/
 ├── README.md                        # Project documentation
 └── .gitignore                       # Git ignored files configuration
 ```
-│
-│
-├── README.md # Project documentation
-│
-└── .gitignore # Ignored files configuration
 ---
