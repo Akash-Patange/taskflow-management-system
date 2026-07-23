@@ -1,7 +1,5 @@
 # 🚀 TaskFlow - Project & Task Management System
 
-![TaskFlow Banner](screenshots/banner.png)
-
 TaskFlow is a full-stack **Project and Task Management System** built with **FastAPI, React, and MySQL**.  
 It is designed to help teams manage projects, assign tasks, track progress, and collaborate efficiently through a role-based workflow.
 
