@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import axios from "axios";
+import api from "../../services/api"
 
 import "../styles/memberDashboard.css";
 
@@ -22,7 +23,7 @@ function MemberDashboard() {
         try 
             {
                 const response = await axios.get(
-                    "http://127.0.0.1:8000/member/dashboard",
+                    "/member/dashboard",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
