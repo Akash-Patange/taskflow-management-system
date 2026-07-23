@@ -109,58 +109,48 @@ Supported Roles:
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
+```text
 TaskFlow/
 │
-├── backend/ # FastAPI Backend
-│ │
-│ ├── core/ # Configuration, database connection, security
-│ │
-│ ├── models/ # SQLAlchemy database models
-│ │
-│ ├── schemas/ # Pydantic request and response schemas
-│ │
-│ ├── routers/ # API endpoints and route handlers
-│ │
-│ ├── dependencies/ # Authentication and permission dependencies
-│ │
-│ ├── main.py # FastAPI application entry point
-│ │
-│ ├── requirements.txt # Backend dependencies
-│ │
-│ └── .env # Environment variables (not committed)
+├── backend/                         # FastAPI Backend
+│   │
+│   ├── core/                        # Configuration, database connection, security
+│   ├── models/                      # SQLAlchemy database models
+│   ├── schemas/                     # Pydantic request and response schemas
+│   ├── routers/                     # API endpoints and route handlers
+│   ├── dependencies/                # Authentication and permission dependencies
+│   │
+│   ├── main.py                      # FastAPI application entry point
+│   ├── requirements.txt             # Backend dependencies
+│   └── .env                         # Environment variables (not committed)
 │
 │
-├── frontend/ # React Frontend
-│ │
-│ ├── src/
-│ │ │
-│ │ ├── admin/ # Admin dashboard pages and components
-│ │ │
-│ │ ├── manager/ # Manager dashboard pages and components
-│ │ │
-│ │ ├── member/ # Member dashboard pages and components
-│ │ │
-│ │ ├── components/ # Reusable UI components
-│ │ │
-│ │ ├── layouts/ # Application layouts
-│ │ │
-│ │ ├── services/ # API service configuration (Axios)
-│ │ │
-│ │ ├── context/ # React Context API state management
-│ │ │
-│ │ ├── styles/ # CSS files
-│ │ │
-│ │ ├── App.jsx # Main application component
-│ │ │
-│ │ └── main.jsx # React entry point
-│ │
-│ ├── public/ # Static assets
-│ │
-│ ├── package.json # Frontend dependencies
-│ │
-│ └── vite.config.js # Vite configuration
+├── frontend/                        # React Frontend
+│   │
+│   ├── src/
+│   │   │
+│   │   ├── admin/                   # Admin dashboard pages and components
+│   │   ├── manager/                 # Manager dashboard pages and components
+│   │   ├── member/                  # Member dashboard pages and components
+│   │   ├── components/              # Reusable UI components
+│   │   ├── layouts/                 # Application layouts
+│   │   ├── services/                # Axios API services
+│   │   ├── context/                 # React Context state management
+│   │   ├── styles/                  # CSS files
+│   │   │
+│   │   ├── App.jsx                  # Main React component
+│   │   └── main.jsx                 # React entry point
+│   │
+│   ├── public/                      # Static assets
+│   ├── package.json                 # Frontend dependencies
+│   └── vite.config.js               # Vite configuration
+│
+│
+├── README.md                        # Project documentation
+└── .gitignore                       # Git ignored files configuration
+```
 │
 │
 ├── README.md # Project documentation
