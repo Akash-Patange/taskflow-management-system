@@ -1,0 +1,97 @@
+
+.user-table {
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border:1px solid #dfe1e6;
+    border-radius:8px;
+    overflow:hidden;
+    font-size:14px;
+}
+
+
+
+.user-table thead {
+    background:#f4f5f7;
+}
+
+
+
+.user-table th {
+    text-align:left;
+    padding:14px 16px;
+    color:#172b4d;
+    font-weight:600;
+    border-bottom:1px solid #dfe1e6;
+}
+
+
+
+.user-table td {
+    padding:14px 16px;
+    color:#42526e;
+    border-bottom:1px solid #ebecf0;
+}
+
+
+
+.user-table tbody tr:hover {
+    background:#f8f9fa;
+}
+
+
+
+.user-table td:nth-child(3) {
+    font-weight:600;
+    color:#0c66e4;
+}
+
+
+
+.user-table td:nth-child(4) {
+    font-weight:600;
+}
+
+
+
+.user-table td:nth-child(4)::first-letter {
+    color:#006644;
+}
+
+
+
+.user-table button {
+    border:none;
+    padding:7px 14px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-right:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+
+
+.user-table button:first-child {
+    background:#0c66e4;
+    color:white;
+}
+
+
+
+.user-table button:first-child:hover {
+    background:#0052cc;
+}
+
+
+
+.user-table button:last-child {
+    background:#de350b;
+    color:white;
+}
+
+
+
+.user-table button:last-child:hover {
+    background:#bf2600;
+}

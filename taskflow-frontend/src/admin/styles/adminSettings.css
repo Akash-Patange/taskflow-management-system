@@ -1,0 +1,174 @@
+.admin-settings-page {
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.admin-settings-page h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #1f2937;
+}
+
+
+
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 900px;
+}
+
+
+
+
+
+.settings-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border: 1px solid #e5e7eb;
+}
+
+
+
+
+
+.settings-card h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color:#111827;
+}
+
+
+
+
+
+.settings-card label {
+    display:block;
+    margin-bottom:8px;
+    margin-top:15px;
+    font-weight:600;
+    color:#374151;
+}
+
+
+
+
+
+
+.settings-card input[type="text"],
+.settings-card select {
+    width:100%;
+    padding:12px 14px;
+    border-radius:8px;
+    border:1px solid #d1d5db;
+    font-size:15px;
+    outline:none;
+    transition:0.3s;
+    box-sizing:border-box;
+}
+
+
+
+
+
+.settings-card input[type="text"]:focus,
+.settings-card select:focus {
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,0.15);
+}
+
+
+
+
+
+.toggle-row {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+    border-bottom:1px solid #e5e7eb;
+}
+
+
+
+
+
+.toggle-row:last-child {
+    border-bottom:none;
+}
+
+
+
+
+
+.toggle-row label {
+    margin:0;
+    font-weight:500;
+}
+
+
+
+
+
+.toggle-row input[type= "checkbox"] {
+    width:45px;
+    height:22px;
+    cursor:pointer;
+    accent-color:#2563eb;
+}
+
+
+
+
+
+
+.save-settings-btn {
+    margin-left: 40%;
+    width:220px;
+    padding:13px 20px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s
+}
+
+
+
+
+
+.save-settings-btn:hover {
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+    .admin-settings-page{
+        padding:20px;
+    }
+
+
+    .settings-card{
+        padding:20px;
+    }
+
+
+    .save-settings-btn{
+        width:100%;
+    }
+}

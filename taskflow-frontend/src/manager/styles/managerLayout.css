@@ -1,0 +1,367 @@
+
+.manager-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f5f7;
+}
+
+
+
+.manager-sidebar {
+    width: 250px;
+    background: #172b4d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0,0,0,.1);
+}
+
+
+
+.manager-logo {
+    padding: 24px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+
+
+.manager-sidebar nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+
+
+.manager-sidebar nav a {
+    color: #c7d1db;
+    text-decoration: none;
+    padding: 14px 28px;
+    transition: .25s;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+.manager-sidebar nav a:hover {
+    background: rgba(255,255,255,.08);
+    color: white;
+}
+
+
+
+.manager-sidebar nav a.active {
+    background: #36b37e;
+    color: white;
+    border-left: 4px solid white;
+}
+
+
+
+.logout-btn {
+    margin: auto 20px 20px;
+    background: #de350b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 600;
+}
+
+
+
+.logout-btn:hover {
+    background: #bf2600;
+}
+
+
+
+.main {
+    flex: 1;
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+.manager-navbar {
+    height: 70px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+    border-bottom: 1px solid #dfe1e6;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+
+.manager-navbar h2 {
+    color: #172b4d;
+    font-size: 24px;
+}
+
+
+
+.manager-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.manager-profile span:first-child {
+    font-weight: 600;
+    color: #172b4d;
+}
+
+
+
+.manager-profile .role {
+    background: #36b37e;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+
+.content {
+    flex: 1;
+    padding: 30px;
+    background: #f4f5f7;
+}
+
+
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 22px;
+    box-shadow: 0 2px 8px rgba(9,30,66,.08);
+    margin-bottom: 20px;
+}
+
+
+
+.card h2 {
+    color: #172b4d;
+    margin-bottom: 15px;
+}
+
+
+
+.card p {
+    color: #42526e;
+}
+
+
+
+.primary-btn {
+    background: #36b37e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 600;
+}
+
+
+
+.primary-btn:hover {
+    background: #2f9e6d;
+}
+
+
+
+.secondary-btn {
+    background: white;
+    color: #172b4d;
+    border: 1px solid #dfe1e6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+
+.secondary-btn:hover {
+    background: #f4f5f7;
+}
+
+
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #111827;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+
+
+.sidebar h2 {
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+
+.sidebar a {
+    text-decoration: none;
+    color: #9ca3af;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 14px 16px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+
+
+.sidebar a:hover {
+    background: #1f2937;
+    color: white;
+}
+
+
+
+.sidebar a.active {
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+.sidebar-logout {
+    margin-top: auto;
+    width: 100%;
+    padding: 13px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #ef4444;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+
+.sidebar-logout:hover {
+    background: #dc2626;
+}
+
+
+
+@media(max-width:900px){
+
+    .sidebar {
+        width: 80px;
+        padding: 20px 10px;
+    }
+
+
+    .sidebar h2 {
+        font-size: 18px;
+    }
+
+
+    .sidebar a {
+        text-align: center;
+        font-size: 13px;
+        padding: 12px 5px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .manager-sidebar {
+        width: 220px;
+    }
+
+
+    .main {
+        margin-left: 220px;
+    }
+
+
+    .content {
+        padding: 20px;
+    }
+
+
+    .manager-navbar {
+        padding: 0 20px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+    .manager-layout {
+        flex-direction: column;
+    }
+
+
+    .manager-sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+
+    .main {
+        margin-left: 0;
+    }
+
+
+    .manager-navbar {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 15px;
+    }
+
+
+    .content {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,77 @@
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Environment Variables
+.env
+*.env
+
+# Python Build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Logs
+*.log
+
+# ==========================================
+# React / Vite
+# ==========================================
+frontend/node_modules/
+frontend/dist/
+
+# If frontend is opened independently
+node_modules/
+dist/
+
+# Package Manager Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==========================================
+# IDE
+# ==========================================
+.vscode/
+.idea/
+
+# ==========================================
+# Operating System
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Cache
+# ==========================================
+.cache/
+tmp/
+
+# ==========================================
+# MySQL
+# ==========================================
+*.sql
+
+# ==========================================
+# Git
+# ==========================================
+*.orig

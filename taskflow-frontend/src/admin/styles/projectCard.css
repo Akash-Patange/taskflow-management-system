@@ -1,0 +1,79 @@
+
+.project-card {
+    background:white;
+    border:1px solid #dfe1e6;
+    border-radius:8px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+
+
+.project-card:hover {
+    box-shadow:0 4px 12px rgba(9,30,66,0.15);
+}
+
+
+
+.project-header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+
+.project-header h3 {
+    margin:0;
+    color:#172b4d;
+}
+
+
+
+.project-info p {
+    margin:6px 0;
+    color:#5e6c84;
+}
+
+
+
+.card-actions {
+    display:flex;
+    gap:10px;
+}
+
+
+
+.view-btn {
+    background:#0c66e4;
+    color:white;
+    padding:8px 14px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+
+
+.edit-btn {
+    background:#ffab00;
+    color:white;
+}
+
+
+
+.delete-btn {
+    background:#de350b;
+    color:white;
+}
+
+
+
+.edit-btn,
+.delete-btn {
+    border:none;
+    padding:8px 14px;
+    border-radius:5px;
+    cursor:pointer;
+}

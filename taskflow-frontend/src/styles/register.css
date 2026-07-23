@@ -1,0 +1,142 @@
+
+.register-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f1f5f9;
+    padding:20px;
+}
+
+
+
+.register-container form{
+    width:100%;
+    max-width:450px;
+    background:#ffffff;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+
+
+.register-container h2{
+    text-align:center;
+    color:#1e293b;
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+
+
+.register-container form p{
+    text-align:center;
+    font-size:14px;
+}
+
+
+
+.register-container form p:first-of-type{
+    color:#dc2626;
+    background:#fee2e2;
+    padding:10px;
+    border-radius:8px;
+}
+
+
+
+.register-container input,
+.register-container select{
+    width:100%;
+    padding:14px 15px;
+    border:1px solid #cbd5e1;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+    background:white;
+    transition:.3s;
+}
+
+
+
+.register-container input:focus,
+.register-container select:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+}
+
+
+
+.register-container select{
+    cursor:pointer;
+}
+
+
+
+.register-container button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+
+
+.register-container button:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+
+
+.register-container button:active{
+    transform:scale(.98);
+}
+
+
+
+.register-container a{
+    color:#2563eb;
+    font-weight:600;
+    text-decoration:none;
+}
+
+
+
+.register-container a:hover{
+    text-decoration:underline;
+}
+
+
+
+.success-message{
+    background:#dcfce7;
+    color:#16a34a;
+    padding:12px;
+    border-radius:8px;
+    text-align:center;
+}
+
+
+
+@media(max-width:500px){
+
+    .register-container form{
+        padding:25px;
+    }
+
+
+    .register-container h2{
+        font-size:26px;
+    }
+}

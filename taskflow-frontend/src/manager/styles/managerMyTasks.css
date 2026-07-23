@@ -1,0 +1,215 @@
+
+.my-tasks-page {
+    padding: 30px;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+
+
+.my-tasks-page h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #1e293b;
+}
+
+
+
+.task-filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+
+
+.task-filters input,
+.task-filters select {
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    background: white;
+}
+
+
+
+.task-filters input {
+    flex: 1;
+}
+
+
+
+.task-filters input:focus,
+.task-filters select:focus {
+    border-color: #2563eb;
+}
+
+
+
+.task-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+
+
+.task-card:hover {
+    transform: translateY(-3px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.12);
+}
+
+
+
+.task-card h2 {
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+
+
+.task-card p {
+    color: #475569;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+
+
+.task-card b {
+    color:#0f172a;
+}
+
+
+
+.task-actions {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-top:25px;
+}
+
+
+
+.task-actions button,
+.details-btn {
+    min-width:120px;
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+    text-align:center;
+    transition:0.3s;
+}
+
+
+
+.details-btn {
+    background:#2563eb;
+    color:white;
+}
+
+
+
+.details-btn:hover {
+    background:#1d4ed8;
+}
+
+
+
+.task-actions button:nth-child(2){
+    background:#f59e0b;
+    color:white;
+}
+
+
+
+.task-actions button:nth-child(2):hover{
+    background:#d97706;
+}
+
+
+
+.task-actions button:nth-child(3){
+    background:#dc2626;
+    color:white;
+}
+
+
+
+.task-actions button:nth-child(3):hover{
+    background:#b91c1c;
+}
+
+
+
+.pagination {
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+
+
+.pagination button {
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+}
+
+
+
+.pagination button:hover {
+    background:#1d4ed8;
+}
+
+
+
+.pagination button:disabled {
+    background:#cbd5e1;
+    cursor:not-allowed;
+}
+
+
+
+.pagination span {
+    font-weight:600;
+    color:#334155;
+}
+
+
+
+@media(max-width:768px){
+
+    .task-filters{
+        flex-direction:column;
+    }
+
+
+    .task-actions{
+        flex-direction:column;
+    }
+
+
+    .task-actions button{
+        width:100%;
+    }
+}
