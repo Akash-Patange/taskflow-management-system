@@ -150,5 +150,97 @@ TaskFlow/
 │
 ├── README.md                        # Project documentation
 └── .gitignore                       # Git ignored files configuration
+
+---
+
+## 📸 Application Screenshots
+
+### 🔐 Authentication
+
+#### Login Page
+
+![Login Page](screenshots/login.png)
+
+#### Register Page
+
+![Register Page](screenshots/register.png)
+
+
+---
+
+# 👑 Admin Dashboard
+
+### Dashboard
+
+![Admin Dashboard](screenshots/Admin-Dashboard.png)
+
+### Project Management
+
+![Admin Projects](screenshots/Admin-projects.png)
+
+### Task Management
+
+![Admin Tasks](screenshots/Admin-tasks.png)
+
+### User Management
+
+![Admin Users](screenshots/Admin-users.png)
+
+### Application Settings
+
+![Admin Settings](screenshots/Admin-settings.png)
+
+### Comments Management
+
+![Admin Comments](screenshots/Admin-comments.png)
+
+
+---
+
+# 👨‍💼 Manager Dashboard
+
+### Dashboard
+
+![Manager Dashboard](screenshots/Manager-dashboard.png)
+
+### Projects
+
+![Manager Projects](screenshots/Manager-projects.png)
+
+### Tasks
+
+![Manager Tasks](screenshots/Manager-Tasks.png)
+
+
+---
+
+# 📋 Task Management
+
+### Project Details
+
+![Project Details](screenshots/Project-details.png)
+
+### Task Details
+
+![Task Details](screenshots/Task-details.png)
+
+
+---
+
+# 👨‍💻 User Dashboard
+
+### Dashboard
+
+![User Dashboard](screenshots/User-dashboard.png)
+
+### Profile
+
+![User Profile](screenshots/User-profile.png)
+
+### Tasks
+
+![User Tasks](screenshots/User-tasks.png)
+
+---
 ```
 ---
