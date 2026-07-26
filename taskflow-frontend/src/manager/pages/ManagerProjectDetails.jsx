@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
+
+import api from "../../services/api"
 
 import "../styles/managerProjectDetails.css";
 
@@ -34,18 +35,18 @@ function ManagerProjectDetails(){
                     commentsRes
                 ] = await Promise.all([
 
-                    axios.get(
-                        `http://127.0.0.1:8000/projects/${id}`,
+                    api.get(
+                        `/projects/${id}`,
                         config
                     ),
 
-                    axios.get(
-                        `http://127.0.0.1:8000/tasks/project-by/${id}/tasks`,
+                    api.get(
+                        `/tasks/project-by/${id}/tasks`,
                         config
                     ),
 
-                    axios.get(
-                        `http://127.0.0.1:8000/comments/project/${id}`,
+                    api.get(
+                        `/comments/project/${id}`,
                         config
                     )
                     ]

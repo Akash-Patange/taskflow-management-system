@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import "../styles/managerDashboard.css";
 
+import api from "../../services/api"
 
 function ManagerDashboard(){
 
@@ -23,8 +23,8 @@ function ManagerDashboard(){
         try
             {
                 const token = localStorage.getItem("token");
-                const response = await axios.get(
-                    "http://127.0.0.1:8000/manager/dashboard",
+                const response = await api.get(
+                    "/manager/dashboard",
                     {
                         headers:{
                             Authorization:`Bearer ${token}`

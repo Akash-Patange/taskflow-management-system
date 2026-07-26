@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import axios from "axios";
+
+import api from "../../services/api"
 
 import "../styles/createTasks.css";
 
@@ -30,8 +31,8 @@ function CreateTask() {
 
         try 
             {
-                const response = await axios.get(
-                    `http://127.0.0.1:8000/projects/${id}/members`,
+                const response = await api.get(
+                    `/projects/${id}/members`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -62,8 +63,8 @@ function CreateTask() {
         e.preventDefault();
         try 
             {
-                await axios.post(
-                    `http://127.0.0.1:8000/tasks/${id}/tasks`,
+                await api.post(
+                    `/tasks/${id}/tasks`,
                     {
                         title: task.title,
                         description: task.description,

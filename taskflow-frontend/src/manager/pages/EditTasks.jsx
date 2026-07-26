@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
+
+import api from "../../services/api"
 
 import "../styles/editTask.css";
 
@@ -29,8 +30,8 @@ function EditTask(){
         
         try
             {
-                const response = await axios.get(
-                    `http://127.0.0.1:8000/tasks/tasks/${id}`,
+                const response = await api.get(
+                    `/tasks/tasks/${id}`,
                     {
                         headers:{
                             Authorization:`Bearer ${token}`
@@ -75,8 +76,8 @@ function EditTask(){
         e.preventDefault();
         try
             {
-                await axios.put(
-                    `http://127.0.0.1:8000/tasks/tasks/${id}`,
+                await api.put(
+                    `/tasks/tasks/${id}`,
                     {
                         title:task.title,
                         description:task.description,

@@ -84,7 +84,7 @@ Supported Roles:
 | React | User Interface |
 | Vite | Frontend Build Tool |
 | React Router | Navigation |
-| Axios | API Communication |
+| api | API Communication |
 | CSS | Styling |
 
 ---
@@ -136,7 +136,7 @@ TaskFlow/
 │   │   ├── member/                  # Member dashboard pages and components
 │   │   ├── components/              # Reusable UI components
 │   │   ├── layouts/                 # Application layouts
-│   │   ├── services/                # Axios API services
+│   │   ├── services/                # api API services
 │   │   ├── context/                 # React Context state management
 │   │   ├── styles/                  # CSS files
 │   │   │

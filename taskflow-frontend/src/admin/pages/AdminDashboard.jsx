@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import StatsCard from "../components/StatsCard";
+
+import api from "../../services/api";
 
 import "../styles/adminDashboard.css";
 import "../../styles/jira-theme.css";
@@ -28,8 +29,8 @@ function AdminDashboard(){
         try
             {
                 const token = localStorage.getItem("token");
-                const response = await axios.get(
-                    "http://localhost:8000/dashboard",
+                const response = await api.get(
+                    "/dashboard",
                     {
                         headers:{
                             Authorization:`Bearer ${token}`

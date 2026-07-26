@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
+
+import api from "../../services/api"
 
 import "../styles/managerEditProjects.css";
 
@@ -28,8 +29,8 @@ function ManagerEditProject(){
         try
             {
                 const token = localStorage.getItem("token");
-                const response = await axios.get(
-                    `http://127.0.0.1:8000/projects/${id}`,
+                const response = await api.get(
+                    `/projects/${id}`,
                     {
                         headers:{
                             Authorization:`Bearer ${token}`
@@ -70,8 +71,8 @@ function ManagerEditProject(){
             {
                 setLoading(true);
                 const token = localStorage.getItem("token");
-                await axios.put(
-                    `http://127.0.0.1:8000/projects/${id}`,
+                await api.put(
+                    `/projects/${id}`,
                     project,
                     {
                         headers:{

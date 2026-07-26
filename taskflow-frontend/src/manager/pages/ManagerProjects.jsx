@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
+
+import api from "../../services/api"
 
 import "../styles/managerProjects.css";
 
@@ -20,8 +21,8 @@ function ManagerProjects() {
 
         try 
             {
-                const response = await axios.get(
-                    "http://127.0.0.1:8000/projects/manager-projects",
+                const response = await api.get(
+                    "/projects/manager-projects",
                     {
                         params: {
                             page,
@@ -52,8 +53,8 @@ function ManagerProjects() {
 
         try 
             {
-                await axios.delete(
-                    `http://127.0.0.1:8000/projects/${id}`,
+                await api.delete(
+                    `/projects/${id}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-import axios from "axios";
 import api from "../../services/api"
 
 import "../styles/memberDashboard.css";
@@ -22,7 +21,7 @@ function MemberDashboard() {
         
         try 
             {
-                const response = await axios.get(
+                const response = await api.get(
                     "/member/dashboard",
                     {
                         headers: {

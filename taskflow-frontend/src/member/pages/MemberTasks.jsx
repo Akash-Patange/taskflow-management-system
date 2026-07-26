@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import axios from "axios";
 
 import "../styles/memberTasks.css";
 
@@ -28,8 +27,8 @@ function MemberTasks(){
         try
             {
                 const token = localStorage.getItem("token");
-                const response = await axios.get(
-                    `http://127.0.0.1:8000/member/tasks`,
+                const response = await api.get(
+                    `/member/tasks`,
                     {
                         params:{
                             page:page,

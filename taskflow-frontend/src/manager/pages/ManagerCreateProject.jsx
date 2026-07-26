@@ -1,6 +1,7 @@
 import { useState } from "react";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
+
+import api from "../../services/api"
 
 import "../styles/managerCreateProject.css";
 
@@ -32,8 +33,8 @@ function ManagerCreateProject(){
             {
                 setLoading(true);
                 const token = localStorage.getItem("token");
-                await axios.post(
-                    "http://127.0.0.1:8000/projects",
+                await api.post(
+                    "/projects",
                     project,
                     {
                         headers:{

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+
 import "../styles/adminSettings.css";
+
+import api from "../../services/api";
 
 
 function AdminSettings(){
@@ -30,8 +32,8 @@ function AdminSettings(){
 
     const fetchSettings = async()=> {
         try{
-            const response = await axios.get(
-                "http://127.0.0.1:8000/settings",
+            const response = await api.get(
+                "/settings",
                 config
             );
 
@@ -62,8 +64,8 @@ function AdminSettings(){
         e.preventDefault();
 
         try {
-            await axios.put(
-                "http://127.0.0.1:8000/settings",
+            await api.put(
+                "/settings",
                 {
                     app_name: settings.app_name,
                     default_priority: settings.default_priority,

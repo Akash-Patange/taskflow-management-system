@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 
 import "../styles/memberProfile.css";
 
@@ -39,7 +38,7 @@ function MemberProfile() {
         
         try
             {
-                const response = await axios.get("http://127.0.0.1:8000/profile/me", config);
+                const response = await api.get("/profile/me", config);
         
                 setProfile(response.data);
             }
@@ -61,8 +60,8 @@ function MemberProfile() {
 
         try 
             {
-                await axios.put(
-                    "http://127.0.0.1:8000/profile/username",
+                await api.put(
+                    "/profile/username",
                     {
                         username:profile.username
                     },
@@ -85,8 +84,8 @@ function MemberProfile() {
     
         try 
             {
-                await axios.put(
-                    "http://127.0.0.1:8000/profile/change-password",
+                await api.put(
+                    "/profile/change-password",
                     password,
                     config
                 );

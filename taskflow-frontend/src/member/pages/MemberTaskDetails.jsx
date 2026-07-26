@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-import axios from "axios";
 
 import "../styles/memberTaskDetails.css";
 
@@ -35,7 +34,7 @@ function MemberTaskDetails() {
 
         try
             {
-                const res = await axios.get(`http://127.0.0.1:8000/tasks/tasks/${id}`,config);
+                const res = await api.get(`/tasks/tasks/${id}`,config);
 
                 setTask(res.data);
                 setStatus(res.data.status);
@@ -56,7 +55,7 @@ function MemberTaskDetails() {
 
         try
             {
-                const res = await axios.get(`http://127.0.0.1:8000/comments/task/${id}`, config);
+                const res = await api.get(`/comments/task/${id}`, config);
         
                 setComments(res.data);
             }
@@ -76,8 +75,8 @@ function MemberTaskDetails() {
 
         try
             {
-                await axios.post(
-                    `http://127.0.0.1:8000/comments/${id}/comment`,
+                await api.post(
+                    `/comments/${id}/comment`,
                     {
                         content:comment
                     },
@@ -102,7 +101,7 @@ function MemberTaskDetails() {
 
         try
             {
-                await axios.delete(`http://127.0.0.1:8000/comments/${commentId}`,   config);
+                await api.delete(`/comments/${commentId}`,   config);
         
                 fetchComments();
             }
@@ -121,8 +120,8 @@ function MemberTaskDetails() {
 
         try
             {
-                await axios.put(
-                    `http://127.0.0.1:8000/tasks/${id}/status`,
+                await api.put(
+                    `/tasks/${id}/status`,
                     {
                         status:status
                     },

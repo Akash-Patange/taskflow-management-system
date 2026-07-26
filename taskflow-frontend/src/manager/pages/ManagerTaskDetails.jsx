@@ -1,7 +1,8 @@
 import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
-import axios from "axios";
+
+import api from "../../services/api"
 
 import "../styles/managerTaskDetails.css";
 
@@ -31,8 +32,8 @@ function ManagerTaskDetails(){
 
         try
             {
-                const response = await axios.get(
-                    `http://127.0.0.1:8000/tasks/tasks/${id}`,
+                const response = await api.get(
+                    `/tasks/tasks/${id}`,
                     config
                 );
 
@@ -56,8 +57,8 @@ function ManagerTaskDetails(){
 
         try
             {
-                const response = await axios.get(
-                    `http://127.0.0.1:8000/comments/task/${id}`,
+                const response = await api.get(
+                    `/comments/task/${id}`,
                     config
                 );
 
@@ -79,8 +80,8 @@ function ManagerTaskDetails(){
 
         try
             {
-                await axios.post(
-                    `http://127.0.0.1:8000/comments/${id}/comment`,
+                await api.post(
+                    `/comments/${id}/comment`,
                     {
                         content: comment
                     },
@@ -109,8 +110,8 @@ function ManagerTaskDetails(){
 
         try
             {
-                await axios.delete(
-                    `http://127.0.0.1:8000/comments/${commentId}`,
+                await api.delete(
+                    `/comments/${commentId}`,
                     config
                 );
 

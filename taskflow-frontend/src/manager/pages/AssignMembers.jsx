@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+
 
 import "../styles/assignMembers.css";
+import api from "../../services/api";
 
 function AssignMembers() {
 
@@ -19,8 +20,8 @@ function AssignMembers() {
 
         try 
             {
-                const usersResponse = await axios.get(
-                    "http://127.0.0.1:8000/admin/all",
+                const usersResponse = await api.get(
+                    "/admin/all",
                     {
                         headers:{
                             Authorization:`Bearer ${token}`
@@ -30,8 +31,8 @@ function AssignMembers() {
 
                 const membersOnly = usersResponse.data.filter(user => user.role === "Member");
 
-                const assignedResponse = await axios.get(
-                    `http://127.0.0.1:8000/projects/${id}/members`,
+                const assignedResponse = await api.get(
+                    `/projects/${id}/members`,
                     {
                         headers:{
                             Authorization:`Bearer ${token}`
@@ -53,8 +54,8 @@ function AssignMembers() {
     
         try
             {
-                await axios.post(
-                    `http://127.0.0.1:8000/projects/${id}/members`,
+                await api.post(
+                    `/projects/${id}/members`,
                     {
                         user_id:userId
                     },
@@ -79,8 +80,8 @@ function AssignMembers() {
     
         try
             {
-                await axios.delete(
-                    `http://127.0.0.1:8000/projects/${id}/members`,
+                await api.delete(
+                    `/projects/${id}/members`,
                     {
                         params:{
                             user_id:userId

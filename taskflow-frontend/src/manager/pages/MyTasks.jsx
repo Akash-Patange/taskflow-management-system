@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
+
+import api from "../../services/api.js";
 
 import "../styles/managerMyTasks.css";
 
@@ -30,8 +31,8 @@ function MyTasks(){
         try
             {
                 setLoading(true);
-                const response = await axios.get(
-                    "http://127.0.0.1:8000/tasks/my-tasks",
+                const response = await api.get(
+                    "/tasks/my-tasks",
                     {
                         params:{
                             page,
@@ -69,8 +70,8 @@ function MyTasks(){
 
         try
             {
-                await axios.delete(
-                    `http://127.0.0.1:8000/tasks/tasks/${taskId}`,
+                await api.delete(
+                    `/tasks/tasks/${taskId}`,
                     {
                         headers:{
                             Authorization:`Bearer ${token}`
