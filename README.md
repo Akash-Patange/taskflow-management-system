@@ -1,4 +1,13 @@
 # 🚀 TaskFlow - Project & Task Management System
+<p align="center">
+  <a href="https://nimble-bavarois-204b6c.netlify.app">
+    <img src="https://img.shields.io/badge/Live%20Demo-Visit%20Website-success?style=for-the-badge" />
+  </a>
+</p>
+
+<p align="center">
+  A Jira-like project management system built with React, FastAPI, and MySQL.
+</p>
 
 TaskFlow is a full-stack **Project and Task Management System** built with **FastAPI, React, and MySQL**.  
 It is designed to help teams manage projects, assign tasks, track progress, and collaborate efficiently through a role-based workflow.
@@ -242,5 +251,29 @@ TaskFlow/
 ![User Tasks](screenshots/User-tasks.png)
 
 ---
-```
+## 🌐 Live Demo
+
+🔗 **Frontend Application:**  
+https://nimble-bavarois-204b6c.netlify.app
+
+🔗 **Backend API:**  
+https://taskflow-management-system-6s35.onrender.com
+
+📚 **API Documentation (Swagger):**  
+https://taskflow-management-system-6s35.onrender.com/docs
+
+
+---
+### Demo Credentials
+Admin
+Email: admin@example.com
+Password: Admin@123
+
+Manager
+Email: rahul@example.com
+Password: Manager@123
+
+Member
+Email: akash@example.com
+Password: Member@123
 ---
