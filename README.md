@@ -266,14 +266,14 @@ https://taskflow-management-system-6s35.onrender.com/docs
 ---
 ### Demo Credentials
 Admin
-Email: admin@example.com
-Password: Admin@123
+Email: admin@gmail.com
+Password: admin123
 
 Manager
-Email: rahul@example.com
-Password: Manager@123
+Email: manager@example.com
+Password: manager123
 
 Member
 Email: akash@example.com
-Password: Member@123
+Password: akash123
 ---
