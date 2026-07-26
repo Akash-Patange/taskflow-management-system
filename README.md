@@ -159,10 +159,10 @@ TaskFlow/
 │
 ├── README.md                        # Project documentation
 └── .gitignore                       # Git ignored files configuration
-
+```
 ---
 
-## 📸 Application Screenshots
+# 📸 Application Screenshots
 
 ### 🔐 Authentication
 
@@ -254,13 +254,13 @@ TaskFlow/
 # 🌐 Live Demo
 
 # 🔗 Frontend Application:  
-(https://nimble-bavarois-204b6c.netlify.app)
+https://nimble-bavarois-204b6c.netlify.app
 
 # 🔗 Backend API:  
-(https://taskflow-management-system-6s35.onrender.com)
+https://taskflow-management-system-6s35.onrender.com
 
 # 📚 API Documentation (Swagger):
-(https://taskflow-management-system-6s35.onrender.com/docs)
+https://taskflow-management-system-6s35.onrender.com/docs
 
 
 ---
