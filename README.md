@@ -251,16 +251,16 @@ TaskFlow/
 ![User Tasks](screenshots/User-tasks.png)
 
 ---
-## 🌐 Live Demo
+# 🌐 Live Demo
 
-🔗 **Frontend Application:**  
-https://nimble-bavarois-204b6c.netlify.app
+# 🔗 Frontend Application:  
+(https://nimble-bavarois-204b6c.netlify.app)
 
-🔗 **Backend API:**  
-https://taskflow-management-system-6s35.onrender.com
+# 🔗 Backend API:  
+(https://taskflow-management-system-6s35.onrender.com)
 
-📚 **API Documentation (Swagger):**  
-https://taskflow-management-system-6s35.onrender.com/docs
+# 📚 API Documentation (Swagger):
+(https://taskflow-management-system-6s35.onrender.com/docs)
 
 
 ---
