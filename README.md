@@ -240,7 +240,7 @@ TaskFlow/
 
 ### Dashboard
 
-![User Dashboard](screenshots/User-dashboard.png)
+![User Dashboard](screenshots/Task-details.png)
 
 ### Profile
 
